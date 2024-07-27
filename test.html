@@ -1,0 +1,55 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoomable Graph View with Controls</title>
+    <link rel="stylesheet" href="styles/dark.css">
+    <script src="3d-force-graph/dist/3d-force-graph.min.js"></script>
+</head>   
+
+<body>
+
+
+  <div class = "content">
+
+    <div class="radio-inputs">
+        <label class="radio">
+        <input type="radio" name="radio"  />
+        <a href="index.html"><span class="name">Home</span></a>
+        </label>
+        <label class="radio">
+        <input type="radio" name="radio" />
+        <a href ="net/net.html" class="name"><span  >Notes</span></a>
+        </label>
+        <label class="radio">
+        <input type="radio" name="radio" checked=""/>
+        <a href="test.html" class="name"><span >Projets</span></a>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio" />
+            <span class="name">CV</span>
+        </label>
+    </div>
+    </div>
+
+    <div id="3d-graph"></div>
+      <script>
+        const Graph = ForceGraph3D()
+            (document.getElementById('3d-graph'))
+              .jsonUrl('data.json')
+              .nodeLabel('id')
+              .nodeAutoColorBy('group');
+      
+        // fit to canvas when engine stops
+        Graph.onEngineStop(() => Graph.zoomToFit(20));
+        Graph.backgroundColor('#2B4257');
+      </script>
+    </div>
+  </body>
+
+  </html>

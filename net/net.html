@@ -1,0 +1,41 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoomable Graph View with Controls</title>
+    <link rel="stylesheet" href="../styles/dark.css">
+    <link rel="stylesheet" href="../styles/graph.css">
+</head>
+<body>
+    <div class = "content">
+
+        <div class="radio-inputs">
+            <label class="radio">
+            <input type="radio" name="radio"  />
+            <a href="../index.html"><span class="name">Home</span></a>
+            </label>
+            <label class="radio">
+            <input type="radio" name="radio" checked=""/>
+            <a href ="net/net.html" class="name"><span  >Notes</span></a>
+            </label>
+            <label class="radio">
+            <input type="radio" name="radio" />
+            <a href="../test.html" class="name"><span >Projets</span></a>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" />
+                <span class="name">CV</span>
+            </label>
+        </div>
+        <div id="graph">
+            <script src="js/d3.v7.min.js"></script>
+            <script src="js/graph.js"></script>
+            </div>
+      </div>
+
+</body>
+</html>

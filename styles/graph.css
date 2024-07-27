@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#graph {
+    width: 100vw;
+    height: 100vh;
+}
+
+.node {
+    fill : #2c13ba7d;
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+    stroke-width: 2;
+}
+
+.node:hover {
+    fill: #ff6347; /* Couleur de survol des nœuds */
+}
+
+.link:hover {
+    stroke: #ff6347; /* Couleur de survol des liens */
+}
+
