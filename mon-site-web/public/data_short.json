@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    {"id": "Myriel", "group": 1,"url": "https://github.com/vasturiano/react-force-graph/blob/master/example/img-nodes/index.html"},
+    {"id": "Mlle.Baptistine", "group": 1,"url": "https://example.com"},
+    {"id": "Mme.Magloire", "group": 1,"url": "https://example.com"},
+    {"id": "Valjean", "group": 2,"url": "https://example.com"}
+  ],
+  "links": [
+    {"source": "Mlle.Baptistine", "target": "Myriel", "value": 1},
+    {"source": "Mme.Magloire", "target": "Myriel", "value": 1},
+    {"source": "Mme.Magloire", "target": "Mlle.Baptistine", "value": 1},
+    {"source": "Valjean", "target": "Mme.Magloire", "value": 1},
+    {"source": "Valjean", "target": "Mlle.Baptistine", "value": 1},
+    {"source": "Valjean", "target": "Myriel", "value": 1}
+  ]
+ 
+}
